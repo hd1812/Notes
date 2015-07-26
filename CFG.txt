@@ -1,0 +1,26 @@
+Context Free Grammar
+
+--Aim
+We need a language for describing valid strings of tokens
+We need a method for distinguishing valid from invalid strings of tokens
+
+--Def.
+Natural Notation for recursive structure
+A CFG consists of 
+-a set of terminals
+-a set of non-terminals
+-a start symbol
+-a set of productions(rules for replacement) X->Y  X is non-terminals, Y is non-terminals/terminals/epsilm(empty?)
+
+--Process
+1. begin with a string with only the start symbol S
+2. replace any non-terminals X in the string by the right-hand side of productions
+3. repeat 1 and 2 until no non-terminal is left
+
+--Def. of language of CFG
+All the terminals reachable from start symbol S are included in language
+
+--Meaning of Terminals
+1. so-called because there are no rules for replacing them
+2. once generated, terminals are permanent
+3. terminals ought to be tokens of the language 
